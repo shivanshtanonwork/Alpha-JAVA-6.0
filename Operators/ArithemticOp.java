@@ -8,6 +8,5 @@ public class ArithemticOp{
         System.out.println("multiply = " + (A * B));
         System.out.println("divide = " + (A / B));
         System.out.println("Modulo(remainder) = " + (A % B));
-
     }
 }
