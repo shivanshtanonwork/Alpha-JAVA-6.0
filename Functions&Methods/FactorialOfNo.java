@@ -19,9 +19,19 @@ public class FactorialOfNo {
         return binCoeff;
     }
 
+    public static int sum(int a, int b) {
+        return a + b;
+    }
+
+    public static int sum(int a, int b, int c) {
+        return a + b + c;
+    }
+
     public static void main(String[] args) {
         // int fact = factorial(4);
         // System.out.println(fact);
-        System.out.println(binCoeff(5, 2));
+        // System.out.println(binCoeff(5, 2));
+        System.out.println(sum(1, 2));
+        System.out.println(sum(5, 5, 5));
     }
 }
