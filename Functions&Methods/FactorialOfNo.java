@@ -61,6 +61,21 @@ public class FactorialOfNo {
         System.out.println();
     }
 
+    public static void binToDec(int binNum) {
+        int myNum = binNum;
+        int pow = 0;
+        int decNum = 0;
+
+        while (binNum > 0) {
+            int lastDigit = binNum % 10;
+            decNum = decNum + (lastDigit * (int) Math.pow(2, pow));
+
+            pow++;
+            binNum = binNum / 10;
+        }
+        System.out.println("decimal of " + myNum + " = " + decNum);
+    }
+
     public static void main(String[] args) {
         // int fact = factorial(4);
         // System.out.println(fact);
@@ -68,6 +83,7 @@ public class FactorialOfNo {
         // System.out.println(sum(1, 2));
         // System.out.println(sum(4.5f, 5.2f));
         // System.out.println(isPrime(12));
-        PrimeinRange(20);
+        // PrimeinRange(20);
+        binToDec(101);
     }
 }
